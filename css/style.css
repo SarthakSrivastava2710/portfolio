@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mont: 'Montserrat', sans-serif;
+  --pur: #60f;
+  --pop: 'Poppins', sans-serif;
+  --bgpur: #171c28;
+  --lblue: #98c1d9;
+  --martop: 80px;
+  --padtop: 100px;
+}
+
+body {
+  background-color: #171c28;
+  font-family: var(--mont);
+  margin: 0 4rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--bgpur);
+  opacity: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pur);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5b00e4;
+}
+
+/* utility classes */
+
+.p-header {
+  color: white;
+  font-family: var(--mont);
+  font-size: 440%;
+}
+
+.txt {
+  color: var(--lblue);
+  font-size: 180%;
+  margin: 2rem 0;
+}
+
+/* navbar */
+
+#navbar {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(23, 28, 40, 0.8);
+  backdrop-filter: blur(1rem);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0rem 4rem;
+}
+
+#navbar ul li {
+  list-style: none;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--pop);
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar ul li:hover {
+  background-color: var(--pur);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#navbar img {
+  width: 10rem;
+  margin: 0.5rem 1rem;
+  margin-left: 4rem;
+}
+/* About me  */
+
+#aboutme {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  margin-top: 50px;
+  padding-top: 75px;
+}
+
+#aboutme .txt {
+  font-family: var(--pop);
+  font-weight: 300;
+  font-size: 170%;
+}
+
+#me {
+  margin: auto auto;
+  padding-bottom: 20px;
+}
+
+#me img {
+  width: 20rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 7px solid var(--pur);
+}
+
+#aboutme .content h1 {
+  margin: 3rem 0;
+}
+
+.social {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.social li {
+  list-style: none;
+  margin: 20px 10px;
+}
+
+.social i {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: auto auto;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.social li p {
+  font-size: 0.5rem;
+  color: white;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.fab {
+  color: white;
+  transition: all 0.5s;
+}
+
+.fa-linkedin-in {
+  background-color: #0e76a8;
+}
+
+.fa-github {
+  background-color: #333;
+}
+
+.fa-behance {
+  background-color: #053eff;
+}
+
+.fa-instagram {
+  background-color: #bc2a8d;
+}
+
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-behance:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  background-color: #171c28;
+  transform: scale(1.2);
+}
+
+.button {
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: var(--pur);
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--pop);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 7rem 3rem;
+  margin-left: 0;
+  border: 3px solid var(--pur);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  position: relative;
+  bottom: 5px;
+  background-color: var(--bgpur);
+}
+
+/* knowledge */
+.knowledge {
+  margin-top: var(--martop);
+  padding-top: var(--padtop);
+}
+
+.knowledge h1 {
+  color: white;
+  text-align: center;
+  font-size: 300%;
+}
+
+.knowledge h2 {
+  background-color: var(--pur);
+  width: 60%;
+  height: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#tech {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  width: 60px;
+  margin: 30px 20px;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.tech-item:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fab {
+  color: white;
+  transition: all 0.5s;
+}
+
+.fa-linkedin-in {
+  background-color: #0e76a8;
+}
+
+.fa-github {
+  background-color: #333;
+}
+
+.fa-behance {
+  background-color: #053eff;
+}
+
+.fa-instagram {
+  background-color: #bc2a8d;
+}
+
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-behance:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  background-color: #171c28;
+  transform: scale(1.2);
+}
+
+/* experience */
+#experience {
+  margin-top: var(--martop);
+  padding-top: var(--padtop);
+}
+
+#experience h1 {
+  color: white;
+  text-align: center;
+  font-size: 300%;
+}
+
+#experience h2 {
+  background-color: var(--pur);
+  width: 40%;
+  height: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#experience .desc {
+  text-align: center;
+  width: 70%;
+  margin: 40px auto;
+  color: var(--lblue);
+  font-size: 125%;
+  font-family: var(--pop);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.details {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid var(--pur);
+  padding: 20px;
+  border-radius: 2rem;
+  margin: 20px;
+  height: 160px;
+  width: 400px;
+  transition: all 0.5s;
+  background-color: #1b202e;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px var(--pur);
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #23293b;
+}
+
+.card h3 {
+  color: white;
+}
+
+.card h4 {
+  color: var(--lblue);
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 80%;
+}
+
+.card p {
+  color: white;
+  margin: 5px 0;
+  font-size: 80%;
+}
+
+/* footer */
+footer {
+  margin: 3rem;
+  margin-bottom: 1rem;
+  margin-top: var(--martop);
+  padding-top: var(--padtop);
+}
+
+#contactme {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+
+#contactme .p-header {
+  font-size: 330%;
+}
+
+.contact p {
+  font-size: 125%;
+}
+
+.chat {
+  color: #e5f5ff;
+  margin: 15px 0;
+}
+
+.emailid {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.email {
+  display: flex;
+}
+.fa-envelope {
+  color: var(--pur);
+  margin: auto auto;
+  animation: mov 2.5s ease-in-out 0s infinite forwards;
+  position: relative;
+}
+
+@keyframes mov {
+  0% {
+    bottom: 0;
+    transform: scale(1);
+  }
+
+  50% {
+    bottom: 30px;
+    transform: scale(1.1);
+  }
+
+  100% {
+    bottom: 0;
+    transform: scale(1);
+  }
+}
+
+#copyright {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  margin: 50px 0 20px 0;
+}
+
+.name {
+  color: #98c1d9;
+  font-weight: 700;
+}

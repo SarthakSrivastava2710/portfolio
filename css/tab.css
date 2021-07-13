@@ -1,0 +1,76 @@
+#navbar {
+  flex-direction: column;
+}
+
+#navbar img {
+  margin: 10px auto;
+  margin-bottom: 0;
+}
+
+#aboutme {
+  grid-template-columns: 1fr;
+}
+
+#aboutme .p-header {
+  text-align: center;
+}
+
+#aboutme .txt {
+  text-align: center;
+}
+
+#aboutme .social {
+  display: flex;
+  justify-content: center;
+}
+
+#aboutme .button {
+  width: 100%;
+  text-align: center;
+}
+#aboutme .btn {
+  margin: 1rem 4rem;
+}
+
+#aboutme img {
+  margin-top: 100px;
+}
+
+#tech {
+  width: 95%;
+}
+
+.card {
+  width: 500px;
+  height: auto;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 110%;
+}
+
+.chat {
+  color: #e5f5ff;
+  margin: 15px 0;
+}
+
+.emailid {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+#copyright {
+  font-size: 1rem;
+}

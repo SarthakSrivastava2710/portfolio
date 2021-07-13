@@ -1,0 +1,129 @@
+:root {
+  --martop: 20px;
+  --padtop: 100px;
+}
+
+body {
+  margin: 0.3rem;
+}
+
+#navbar ul {
+  margin: 0rem 1rem;
+}
+
+#navbar ul li {
+  padding: 0.5rem 0.5rem;
+}
+
+#navbar ul li a {
+  font-size: 80%;
+}
+
+#navbar img {
+  width: 7rem;
+}
+
+#aboutme .content h1 {
+  margin: 1rem 0;
+  margin-top: 2rem;
+}
+
+#aboutme .p-header {
+  font-size: 200%;
+}
+
+#aboutme .txt {
+  font-size: 110%;
+}
+
+#aboutme .btn {
+  margin: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
+}
+
+#aboutme img {
+  width: 15rem;
+}
+
+#aboutme,
+.knowledge,
+footer {
+  margin-top: var(--martop);
+  padding-top: var(--padtop);
+}
+
+#experience {
+  margin-top: 10px;
+  padding-top: 50px;
+}
+
+.knowledge h1,
+#experience h1 {
+  font-size: 150%;
+}
+
+.tech-item {
+  width: 55px;
+  filter: grayscale(0);
+  margin: 15px 15px;
+}
+
+.knowledge h2 {
+  width: 50%;
+  height: 3px;
+}
+
+#experience h2 {
+  width: 35%;
+  height: 3px;
+}
+
+#experience .desc {
+  width: 90%;
+  font-size: 110%;
+}
+
+#contactme {
+  grid-template-columns: 1fr;
+}
+
+#contactme .p-header {
+  text-align: center;
+}
+
+.contact p {
+  font-size: 100%;
+  text-align: center;
+}
+
+.email {
+  font-size: 50%;
+}
+
+.contact .social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@keyframes mov {
+  0% {
+    bottom: 0;
+    transform: scale(1);
+  }
+
+  50% {
+    bottom: 15px;
+    transform: scale(1.1);
+  }
+
+  100% {
+    bottom: 0;
+    transform: scale(1);
+  }
+}
+
+#copyright {
+  font-size: 0.8rem;
+  margin: 50px 0 20px 0;
+}

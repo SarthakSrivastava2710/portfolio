@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mont: 'Montserrat', sans-serif;
+  --pur: #60f;
+  --pop: 'Poppins', sans-serif;
+  --bgpur: #171c28;
+}
+
+body {
+  background-color: #171c28;
+  font-family: var(--mont);
+  margin: 0 4rem;
+  color: #e5f5ff;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--bgpur);
+  opacity: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pur);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5b00e4;
+}
+
+/* nav */
+
+#nav {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(23, 28, 40, 0.8);
+  backdrop-filter: blur(1rem);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#nav img {
+  width: 12rem;
+}
+
+.certi {
+  margin: 20px auto;
+  margin-top: 150px;
+}
+
+table {
+  border: 2px solid var(--pur);
+  box-shadow: 1px 1px 10px var(--pur);
+  border-radius: 2rem;
+  margin: 20px auto;
+}
+
+div {
+  margin-top: 70px;
+}
+
+body > div {
+  margin-top: 0%;
+}
+h1 {
+  text-align: center;
+}
+
+th {
+  padding: 15px;
+  font-size: 125%;
+  border-radius: 2rem;
+}
+
+.cisco td {
+  padding: 10px 50px;
+}
+
+tr {
+  /* color: black; */
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 2rem;
+}
+
+tr:nth-child(even) {
+  background-color: #1a202e;
+}
+
+tr:nth-child(odd) {
+  background-color: #191f2b;
+}
+
+tr:last-child {
+  background-color: rgb(23, 28, 40, 0);
+}
+
+tr td:nth-child(3) {
+  padding: 8px 20px;
+}
+
+td {
+  padding: 2px 10px;
+  text-align: center;
+  padding: 4px;
+  /* border: 1px solid var(--pur); */
+}
+
+a {
+  text-decoration: none;
+  color: #e5f5ff;
+}
+
+a:hover {
+  color: white;
+}
+
+details {
+  margin: 30px 5rem;
+}
+
+details:active {
+  outline: none;
+}
+
+details:hover {
+  cursor: pointer;
+}
+
+details ul {
+  margin: 10px 30px;
+}
+
+#copyright {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  margin: 50px 0 20px 0;
+}
+
+.name {
+  color: #98c1d9;
+  font-weight: 700;
+}
