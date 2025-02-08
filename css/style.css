@@ -185,10 +185,15 @@ html {
   background-color: #bc2a8d;
 }
 
+.fa-snapchat {
+  background-color: #ffff00;
+}
+
 .fa-github:hover,
 .fa-linkedin-in:hover,
 .fa-behance:hover,
-.fa-instagram:hover {
+.fa-instagram:hover,
+.fa-snapchat:hover {
   cursor: pointer;
   background-color: #171c28;
   transform: scale(1.2);
